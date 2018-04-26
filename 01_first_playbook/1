@@ -1,0 +1,15 @@
+- name: PLAY1
+  hosts: manage
+  tasks:
+    - name: TASK1
+      ping:
+        data: abc
+    - ping:
+        data: def
+
+- name: PLAY2
+  hosts: manage1
+  tasks:
+    - name: TASK2
+      ping:
+        data: ghi

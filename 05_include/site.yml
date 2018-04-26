@@ -1,0 +1,4 @@
+- hosts: manage1
+  tasks:
+    - include_tasks: tasks/pkg_install.yml pkg_name=httpd
+    - include_tasks: tasks/svc_start.yml 

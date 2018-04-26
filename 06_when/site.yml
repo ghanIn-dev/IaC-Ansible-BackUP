@@ -1,0 +1,9 @@
+---
+- hosts: manage1
+  tasks: 
+  - command: id
+    register: test
+
+  - debug:
+      var: test.rc
+    when: test.rc == 1

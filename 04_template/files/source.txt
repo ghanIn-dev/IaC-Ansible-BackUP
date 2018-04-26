@@ -1,0 +1,2 @@
+This sys name is {{ ansible_hostname }}.
+This sys ip is {{ ansible_enp0s8.ipv4.address }}.

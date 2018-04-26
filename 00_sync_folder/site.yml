@@ -1,0 +1,7 @@
+---
+- hosts: local
+  tasks: 
+    - name: Sync Res to local
+      synchronize:
+        src: 192.168.56.11:/home/cccr/seokhyun
+        dest: /home/cccr/storage 

@@ -1,0 +1,5 @@
+pkg_name: httpd
+svc_name: httpd
+port_number: "8080/tcp"
+web_svc_port: "8080/tcp"
+web_admin_email: "test"

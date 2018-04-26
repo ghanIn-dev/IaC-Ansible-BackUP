@@ -1,0 +1,12 @@
+[local]
+192.168.56.10
+
+[manage1]
+192.168.56.11
+
+[manage2]
+192.168.56.12
+
+[manage:children]
+manage1
+manage2

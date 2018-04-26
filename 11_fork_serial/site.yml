@@ -1,0 +1,9 @@
+---
+- hosts: manage
+  gather_facts: no
+  tasks:
+    - name: task1
+      command: sleep 5
+
+    - name: task2
+      command: sleeep 5

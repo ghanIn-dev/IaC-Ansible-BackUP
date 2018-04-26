@@ -1,0 +1,7 @@
+---
+# handlers file for web
+- name: start srevice
+  service:
+    name: httpd
+    state: started
+

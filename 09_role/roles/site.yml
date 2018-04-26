@@ -1,0 +1,17 @@
+- hosts: manage1
+  become: yes
+
+  pre-tasks:
+    - name: PRE-Task
+      ping:
+  
+  roles:
+    - web
+
+  tasks:
+    - name: Task
+      ping:
+
+  post-tasks:
+    - name: post task
+      ping:

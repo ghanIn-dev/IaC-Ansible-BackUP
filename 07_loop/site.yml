@@ -1,0 +1,9 @@
+---
+- hosts: manage1
+  tasks:
+    - debug:
+        msg: " test msg for {{ item }}. "
+      with_items:
+        - john
+        - seokhyun
+        - hyun

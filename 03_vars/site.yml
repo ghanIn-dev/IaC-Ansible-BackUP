@@ -1,0 +1,10 @@
+---
+- hosts: manage1
+  vars:
+    x: 10
+    b: 20
+  tasks:
+  - debug:
+      var: x
+  - debug:
+      var: b

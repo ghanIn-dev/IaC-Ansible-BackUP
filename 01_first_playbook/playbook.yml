@@ -1,0 +1,17 @@
+- name: PLAY1
+  hosts: manage
+  tasks:
+    - name: TASK1
+      ping:
+        data: abc
+    - name: Task2
+      copy:
+        src: 
+        dest:
+
+- name: PLAY2
+  hosts: manage1
+  tasks:
+    - name: TASK3
+      ping:
+        data: ghi

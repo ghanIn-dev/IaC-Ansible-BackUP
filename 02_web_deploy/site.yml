@@ -1,0 +1,17 @@
+---
+- hosts: manage1
+  become: yes
+  tasks:
+    - yum: 
+        name: httpd
+        state: installed
+    - service:
+        name: httpd
+        state: started
+        enabled: yes
+    - firewalld:
+        state: enabled
+        immediate: true
+        permanent: yes
+        port: 80/tcp
+

@@ -1,0 +1,30 @@
+---
+- hosts: manage1
+  become: yes
+  vars_files:
+  - var.yml
+  tasks:
+    - yum: 
+        name: "{{ pkg_name }}"
+        state: installed
+    - name: copying config file
+      template:
+        src: files/httpd.conf.j2
+        dest: /etc/httpd/conf/httpd.conf
+    - service:
+        name: "{{ svc_name }}"
+        state: started
+        enabled: yes
+    - firewalld:
+        state: enabled
+        immediate: true
+        permanent: yes
+        port: "{{ port_number}} "
+
+  handlers:
+  - name: restart apa
+    service: 
+      name: "{{ svc_name }}"
+      enabled: yes
+      state: restarted
+

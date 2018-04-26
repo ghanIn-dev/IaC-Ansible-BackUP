@@ -1,0 +1,3 @@
+---
+# vars file for web
+web_pkg_name: httpd

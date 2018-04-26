@@ -1,0 +1,5 @@
+- hosts: all
+  tasks:
+    - copy: 
+        content: hello
+        dest: /tmp/hello.txt
