@@ -1,6 +1,5 @@
 ---
 - hosts: manage
- # gather_facts: no
   tasks: 
     - debug:
         msg: "This system name is {{ ansible_hostname }}."
